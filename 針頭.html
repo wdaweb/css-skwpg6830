@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            top: 50%;
+            left: 40%;
+            position: absolute;
+            display: inline-block;
+
+        }
+
+        .ruler {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(240, 240, 240);
+            top: 50%;
+            left: 50%;
+            border: 1px solid black;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .ruler::before {
+            content: "";
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 250px;
+            background-color: black;
+        }
+
+        .ruler::after {
+            content: "";
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 300px;
+            background-color: rgb(255, 255, 173);
+        }
+
+        .mae {
+            width: 40px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: rgb(240, 240, 240);
+            position: absolute;
+            border-radius: 10%;
+            right: 91px;
+            top: 10px;
+
+        }
+
+        .mae::before {
+            content: "";
+            width: 40px;
+            height: 65px;
+            border: 1px solid black;
+            background-color: rgb(240, 240, 240);
+            position: absolute;
+            bottom: 15px;
+            left: 40px;
+        }
+
+        .mae::after {
+            content: "";
+            width: 45px;
+            height: 65px;
+            border: 1px solid black;
+            background-color: rgb(240, 240, 240);
+            position: absolute;
+            border-radius: 0 10% 10% 0%;
+            bottom: 15px;
+            right: -589px;
+        }
+
+        .sen {
+            position: relative;
+            z-index: 2;
+            top: 90px;
+            left: 55px;
+        }
+
+        .sen::before {
+            content: "";
+            width: 80px;
+            height: 1px;
+            position: absolute;
+            background-color: black;
+            left: 546px;
+            bottom: 50px;
+        }
+
+        .d {
+            width: 1px;
+            height: 15px;
+            position: absolute;
+            background-color: black;
+            top: 10px;
+            left: 80px;
+            margin-right: 0px;
+            z-index: 2;
+        }
+
+        .e {
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .f {
+            position: absolute;
+            top: 10px;
+            left: 120px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .g {
+            position: absolute;
+            top: 10px;
+            left: 140px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .h {
+            position: absolute;
+            top: 10px;
+            left: 160px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .i {
+            position: absolute;
+            top: 10px;
+            left: 180px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .j {
+            position: absolute;
+            top: 10px;
+            left: 200px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .k {
+            position: absolute;
+            top: 10px;
+            left: 220px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .l {
+            position: absolute;
+            top: 10px;
+            left: 240px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .m {
+            position: absolute;
+            top: 10px;
+            left: 260px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .n {
+            position: absolute;
+            top: 10px;
+            left: 280px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .o {
+            position: absolute;
+            top: 10px;
+            left: 300px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .p {
+            position: absolute;
+            top: 10px;
+            left: 370px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .q {
+            position: absolute;
+            top: 10px;
+            left: 390px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .r {
+            position: absolute;
+            top: 10px;
+            left: 410px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .s {
+            position: absolute;
+            top: 10px;
+            left: 430px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .t {
+            position: absolute;
+            top: 10px;
+            left: 450px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .u {
+            position: absolute;
+            top: 10px;
+            left: 470px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .v {
+            position: absolute;
+            top: 10px;
+            left: 490px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .w {
+            position: absolute;
+            top: 10px;
+            left: 510px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .x {
+            position: absolute;
+            top: 10px;
+            left: 530px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .y {
+            position: absolute;
+            top: 10px;
+            left: 550px;
+            width: 1px;
+            height: 15px;
+            background-color: black;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ruler"></div>
+        <div class="mae"></div>
+        <div class="sen">Made in Taiwan</div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+        <div class="j"></div>
+        <div class="k"></div>
+        <div class="l"></div>
+        <div class="m"></div>
+        <div class="n"></div>
+        <div class="o"></div>
+        <div class="p"></div>
+        <div class="q"></div>
+        <div class="r"></div>
+        <div class="s"></div>
+        <div class="t"></div>
+        <div class="u"></div>
+        <div class="v"></div>
+        <div class="w"></div>
+        <div class="x"></div>
+        <div class="y"></div>
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
